@@ -1,0 +1,51 @@
+<!--<div class="">
+  <div class="flex flex-wrap w-1/4">
+  <%= image_tag "nav_gran.png" %>
+  <%= image_tag "nav_djeeta.png" %>
+  <%= image_tag "nav_katalina.png" %>
+  <%= image_tag "nav_rackam.png" %>
+  <%= image_tag "nav_io.png" %>
+  <%= image_tag "nav_eugen.png" %>
+  <%= image_tag "nav_rosetta.png" %>
+  <%= image_tag "nav_lancelot.png" %>
+  <%= image_tag "nav_vane.png" %>
+  <%= image_tag "nav_percival.png" %>
+  <%= image_tag "nav_siegfried.png" %>
+  <%= image_tag "nav_charlotta.png" %>
+  <%= image_tag "nav_yodarha.png" %>
+  <%= image_tag "nav_narmaya.png" %>
+  <%= image_tag "nav_zeta.png" %>
+  <%= image_tag "nav_vaseraga.png" %>
+  <%= image_tag "nav_ferry.png" %>
+  <%= image_tag "nav_ghandagoza.png" %>
+  <%= image_tag "nav_cagliostro.png" %>
+  </div>
+  <div class='flex flex-wrap w-1/2'>
+  <%= image_tag "gran.png" %>
+  <%= image_tag "djeeta.png" %>
+  <%= image_tag "katalina.png" %>
+  <%= image_tag "rackam.png" %>
+  <%= image_tag "io.png" %>
+  <%= image_tag "eugen.png" %>
+  <%= image_tag "rosetta.png" %>
+  <%= image_tag "lancelot.png" %>
+  <%= image_tag "vane.png" %>
+  <%= image_tag "percival.png" %>
+  <%= image_tag "siegfried.png" %>
+  <%= image_tag "charlotta.png" %>
+  <%= image_tag "yodarha.png" %>
+  <%= image_tag "narmaya.png" %>
+  <%= image_tag "zeta.png" %>
+  <%= image_tag "vaseraga.png" %>
+  <%= image_tag "ferry.png" %>
+  <%= image_tag "ghandagoza.png", class: 'bg-black' %>
+  <%= image_tag "cagliostro.png" %>
+  </div>
+  </div>-->
+  <%# image_tag "io.png" %>
+
+  <%= @characters.each do |char| %>
+    <%= image_tag "nav_#{char.name.downcase}.png" %>
+    <%= char.name %>
+    <%= char.element %>
+  <% end %>
