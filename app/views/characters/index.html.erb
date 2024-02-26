@@ -1,12 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Characters</h1>
+<h1 class='text-center py-8'>Select Your Character</h1>
 
-<div id="characters">
+<div id="characters" class='flex flex-wrap w-1/2 justify-center mx-auto gap-4'>
   <% @characters.each do |character| %>
     <%= render character %>
     <p>
-      <%= link_to "Show this character", character %>
+      <%# link_to "Show this character", character %>
     </p>
   <% end %>
 </div>

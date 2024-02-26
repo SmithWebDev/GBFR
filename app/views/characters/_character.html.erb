@@ -1,12 +1,12 @@
 <div id="<%= dom_id character %>">
-  <p>
-    <strong>Name:</strong>
-    <%= character.name %>
-  </p>
 
-  <p>
-    <strong>Element:</strong>
-    <%= character.element %>
-  </p>
+  <%= link_to character do %>
+    <%= image_tag "nav_#{character.name.downcase}.png" %>
+  <% end %>
+
+  <div class="flex justify-between">
+    <p> <%= character.name %> </p>
+    <p> <%= character.element %> </p>
+  </div>
 
 </div>
